@@ -108,7 +108,7 @@ const HourlyForecast = ({ getIcon }) => {
                                     className={`hour flex items-center gap-3 px-2 rounded-lg border
                                 ${matches && weekday == currentDay ?
                                             `bg-mycolor-600 border-mycolor-300 bg-cover bg-center 
-                                            bg-no-repeat bg-[url(assets/images/bg-today-large.svg)]`
+                                            bg-no-repeat bg-[url(/public/assets/images/bg-today-large.svg)]`
                                             :
                                             'bg-mycolor-700 border-mycolor-600'}
                             
