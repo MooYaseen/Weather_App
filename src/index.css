@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Neutral */
+  --color-mycolor-900: hsl(243, 96%, 9%);
+  --color-mycolor-800: hsl(243, 27%, 20%);
+  --color-mycolor-700: hsl(243, 23%, 24%);
+  --color-mycolor-600: hsl(243, 23%, 30%);
+  --color-mycolor-300: hsl(240, 6%, 70%);
+  --color-mycolor-200: hsl(250, 6%, 84%);
+  --color-mycolor-0: hsl(0, 0%, 100%);
+
+  /* Orange */
+  --color-myorange: hsl(28, 100%, 52%);
+
+  /* Blue */
+  --color-myblue-500: hsl(233, 67%, 56%);
+  --color-myblue-700: hsl(248, 70%, 36%);
+
+  /* DM font */
+  --font-dm: "DM Sans", sans-serif;
+
+  /* Bricolage Grotesque font */
+  --font-bricolage: "Bricolage Grotesque", sans-serif;
+}
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+
+  /* color-scheme: light dark;
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #242424; */
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

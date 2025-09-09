@@ -1,0 +1,71 @@
+body {
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.select-city::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+.select-city::-webkit-scrollbar-thumb {
+  /* background-color: var(--color-mycolor-600); */
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 8%,
+      var(--color-mycolor-300) 8%,
+      var(--color-mycolor-300) 92%,
+      transparent 92%);
+  border-radius: 6px;
+}
+
+.select-city::-webkit-scrollbar-track {
+  background-color: #D1D5DB;
+  background-color: transparent;
+  /* Tailwind gray-300 */
+}
+
+
+
+.hourly::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.hourly::-webkit-scrollbar-thumb {
+  background-color: var(--color-mycolor-300);
+  border-radius: 6px;
+}
+
+.hourly::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+.today {
+  animation: bgmove 15s ease-in-out infinite;
+}
+
+@keyframes bgmove {
+
+  0%,
+  100% {
+    background-position-y: top;
+  }
+
+  50% {
+    background-position-y: bottom;
+  }
+}
