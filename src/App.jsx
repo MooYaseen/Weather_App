@@ -112,10 +112,9 @@ function App() {
   const [currentDay, setCurrentDay] = useState('')
 
   useEffect(() => {
-    if (data.daily) {
-      setCurrentDay(new Date(dailyData?.time?.[0]).toLocaleDateString('en-us', { weekday: 'long' }))
-    }
-  }, [data.daily])
+    setCurrentDay(new Date().toLocaleDateString('en-us', { weekday: 'long' }))
+    console.log(currentDay)
+  }, [data, data.daily])
 
   const fetchData = async () => {
     try {
