@@ -39,7 +39,7 @@ const HourlyForecast = ({ getIcon }) => {
                     }}
                 >
                     <p className=''>{currentDay === 'Invalid Date' ? '' : currentDay}</p>
-                    <img src="/assets/images/icon-dropdown.svg" alt="dropdown" />
+                    <img src="assets/images/icon-dropdown.svg" alt="dropdown" />
                 </div>
                 <div className={`week absolute top-10 right-0 bg-mycolor-800 p-2 rounded-lg
                          w-[180px] text-lg gap-1.5 flex flex-col
@@ -108,12 +108,12 @@ const HourlyForecast = ({ getIcon }) => {
                                     className={`hour flex items-center gap-3 px-2 rounded-lg border
                                 ${matches && weekday == currentDay ?
                                             `bg-mycolor-600 border-mycolor-300 bg-cover bg-center 
-                                            bg-no-repeat bg-[url(/assets/images/bg-today-large.svg)]`
+                                            bg-no-repeat bg-[url(assets/images/bg-today-large.svg)]`
                                             :
                                             'bg-mycolor-700 border-mycolor-600'}
                             
                             `}>
-                                    <img src={`/assets/images/icon-${getIcon(el.code)}.webp`} alt=""
+                                    <img src={`assets/images/icon-${getIcon(el.code)}.webp`} alt=""
                                         className='w-10'
                                     />
                                     <p>{el.hour}</p>

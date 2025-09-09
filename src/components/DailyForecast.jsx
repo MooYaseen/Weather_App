@@ -39,7 +39,7 @@ const DailyForecast = ({ getIcon }) => {
                                  rounded-lg border border-mycolor-600 bg-mycolor-800
                                  '>
                                 <h4 className='text-base text-mycolor-0 font-semibold'>{new Date(el).toLocaleDateString('en-us', { weekday: 'short' })}</h4>
-                                <img src={`/assets/images/icon-${getIcon(dailyData.weather_code[indx])}.webp`}
+                                <img src={`assets/images/icon-${getIcon(dailyData.weather_code[indx])}.webp`}
                                     alt={getIcon(dailyData.weather_code[indx])}
                                     className='w-16'
                                 />

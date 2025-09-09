@@ -80,7 +80,7 @@ const Landing = () => {
 
 
                     </div>
-                    <img src="/assets/images/icon-search.svg" alt=""
+                    <img src="assets/images/icon-search.svg" alt=""
                         className='absolute top-1/2 left-4 -translate-y-1/2'
                     />
                 </label>

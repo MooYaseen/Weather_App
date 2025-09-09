@@ -20,7 +20,7 @@ const TodayWeather = ({ getIcon }) => {
                 className={`today rounded-[20px] p-5 min-h-[190px] flex justify-between items-center bg-bottom gap-4
                     ${data.error === true || data.length === 0
                         ? "bg-mycolor-800" // Loading / Error state
-                        : "bg-[url(/assets/images/bg-today-small.svg)] md:bg-[url(/assets/images/bg-today-large.svg)] flex-row flex-wrap" // Data loaded state
+                        : "bg-[url(assets/images/bg-today-small.svg)] md:bg-[url(assets/images/bg-today-large.svg)] flex-row flex-wrap" // Data loaded state
                     }
                 bg-no-repeat bg-cover`}
             >
@@ -28,7 +28,7 @@ const TodayWeather = ({ getIcon }) => {
                 {data.error === true || data.length === 0 ? (
                     <div className="today-icon grow flex flex-col justify-center items-center h-full">
                         <img
-                            src="/assets/images/icon-loading.svg"
+                            src="assets/images/icon-loading.svg"
                             alt={data.current?.weather_code}
                             className="w-[70px] animate-pulse"
                         />
@@ -47,7 +47,7 @@ const TodayWeather = ({ getIcon }) => {
                         {/* Current weather icon */}
                         <div className="today-icon md:grow flex justify-end items-center h-[100px] md:h-full">
                             <img
-                                src={`/assets/images/icon-${getIcon(data.current?.weather_code)}.webp`}
+                                src={`assets/images/icon-${getIcon(data.current?.weather_code)}.webp`}
                                 alt={data.current?.weather_code}
                                 className="w-[120px] md:w-[100px]"
                             />

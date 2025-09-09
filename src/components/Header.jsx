@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className='pt-4 flex justify-between'>
             <div className="logo">
-                <img src="/assets/images/logo.svg" alt="logo" />
+                <img src="assets/images/logo.svg" alt="logo" />
             </div>
 
             <div className='relative z-40 group'>
@@ -33,9 +33,9 @@ const Header = () => {
                     }}
 
                 >
-                    <img src="/assets/images/icon-units.svg" alt="icon" />
+                    <img src="assets/images/icon-units.svg" alt="icon" />
                     <p className=''>Units</p>
-                    <img src="/assets/images/icon-dropdown.svg" alt="dropdown" />
+                    <img src="assets/images/icon-dropdown.svg" alt="dropdown" />
 
                 </button>
 
@@ -83,7 +83,7 @@ const Header = () => {
                         ${metric && 'bg-mycolor-700'}
                         `}>
                             <p>Celsius (°C)</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={metric ? '' : 'hidden'}
                             />
                         </div>
@@ -95,7 +95,7 @@ const Header = () => {
                         ${!metric && 'bg-mycolor-700'}
                         `}>
                             <p>Fahrenheit (°F)</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={!metric ? '' : 'hidden'}
                             />
                         </div>
@@ -119,7 +119,7 @@ const Header = () => {
                         ${metric && 'bg-mycolor-700'}
                         `}>
                             <p>Km/h</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={metric ? '' : 'hidden'}
                             />
                         </div>
@@ -131,7 +131,7 @@ const Header = () => {
                         ${!metric && 'bg-mycolor-700'}
                         `}>
                             <p>mph</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={!metric ? '' : 'hidden'}
                             />
                         </div>
@@ -155,7 +155,7 @@ const Header = () => {
                         ${metric && 'bg-mycolor-700'}
                         `}>
                             <p>Millimeters (mm)</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={metric ? '' : 'hidden'}
                             />
                         </div>
@@ -167,7 +167,7 @@ const Header = () => {
                         ${!metric && 'bg-mycolor-700'}
                         `}>
                             <p>Inch (in)</p>
-                            <img src="/assets/images/icon-checkmark.svg" alt=""
+                            <img src="assets/images/icon-checkmark.svg" alt=""
                                 className={!metric ? '' : 'hidden'}
                             />
                         </div>

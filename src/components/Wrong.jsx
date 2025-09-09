@@ -8,7 +8,7 @@ const Wrong = () => {
 
     return (
         <div className='flex mt-10 flex-col gap-8 items-center'>
-            <img src="/assets/images/icon-error.svg" alt=""
+            <img src="assets/images/icon-error.svg" alt=""
                 className='w-10'
             />
             <h1 className='text-4xl font-semibold font-bricolage'>something went wrong</h1>
@@ -19,7 +19,7 @@ const Wrong = () => {
                     fetchData()
                 }}
             >
-                <img src="/assets/images/two-circular-arrows.png" alt=""
+                <img src="assets/images/two-circular-arrows.png" alt=""
                     className='max-h-4 invert'
                 />
                 <p>retry</p>
