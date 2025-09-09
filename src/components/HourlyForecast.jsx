@@ -96,15 +96,13 @@ const HourlyForecast = ({ getIcon }) => {
                         :
 
                         hourlyDd.map((el, indx) => {
-                            const thishour = new Date().toLocaleTimeString('en-us', { hour: 'numeric', hour12: 'undefined' })
+                            const thishour = new Date().toLocaleTimeString('en-us', { hour: 'numeric' })
                             const matches = thishour === el.hour
                             const weekday = new Date().toLocaleDateString('en-us', { weekday: 'long' })
+                            console.log(matches)
                             return (
                                 <div key={indx}
                                     ref={matches ? specialRef : null}
-                                    onClick={() => {
-                                        console.log(indx)
-                                    }}
                                     className={`hour flex items-center gap-3 px-2 rounded-lg border
                                 ${matches && weekday == currentDay ?
                                             `bg-mycolor-600 border-mycolor-300 bg-cover bg-center 
@@ -116,7 +114,11 @@ const HourlyForecast = ({ getIcon }) => {
                                     <img src={`assets/images/icon-${getIcon(el.code)}.webp`} alt=""
                                         className='w-10'
                                     />
-                                    <p>{el.hour}</p>
+                                    <p
+                                        onClick={() => {
+                                            console.log(el.hour)
+                                        }}
+                                    >{el.hour}</p>
                                     <div className="temp grow text-end">{Math.round(el.temp)}°</div>
                                 </div>
                             )
