@@ -19,8 +19,8 @@ const TodayWeather = ({ getIcon }) => {
             <div
                 className={`today rounded-[20px] p-5 min-h-[190px] flex justify-between items-center bg-bottom gap-4
                     ${data.error === true || data.length === 0
-                        ? "bg-mycolor-800" // Loading / Error state
-                        : "bg-[url(assets/images/bg-today-small.svg)] md:bg-[url(assets/images/bg-today-large.svg)] flex-row flex-wrap" // Data loaded state
+                        ? "bg-mycolor-800"
+                        : "bg-[url(/images/bg-today-small.svg)] md:bg-[url(/images/bg-today-large.svg)] flex-row flex-wrap"
                     }
                 bg-no-repeat bg-cover`}
             >
