@@ -154,7 +154,7 @@ function App() {
       metric, setMetric, fetchData
     }} >
       <main className='w-full min-h-dvh bg-mycolor-900 text-mycolor-0 font-dm'>
-        <div className='container lg:container mx-auto px-[10px] md:px-0 h-full'>
+        <div className='container lg:container mx-auto max-w-[90%] xl:max-w-[1200px] 2xl:max-w-[1440px] px-[10px] md:px-0 h-full'>
           <Header />
           {data.error ?
             <Wrong />
